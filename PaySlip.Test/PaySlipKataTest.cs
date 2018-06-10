@@ -11,8 +11,8 @@ namespace PaySlipKata.Test
         [Theory]
         [InlineData("John", "Doe", "John Doe")]
         [InlineData("Peter", "Smith", "Peter Smith")]
-        [InlineData("Ben", "Peterson", "Ben Peterson")]
-        [InlineData("Scarlett", "Jensen", "Scarlett Jensen")]
+        [InlineData("ben", "peterson", "Ben Peterson")]
+        [InlineData("scarlett", "jensen", "Scarlett Jensen")]
         public void FullNameShouldBeGenerated(string firstName, string lastName, string actualFullName)
         {
             var expectedFullName = paySlip.GenerateFullName(firstName, lastName);

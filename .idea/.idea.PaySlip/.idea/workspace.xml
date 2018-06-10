@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecdf8886-ba65-4d08-823d-98c6c2e51a88" name="Default" comment="" />
+    <list default="true" id="ecdf8886-ba65-4d08-823d-98c6c2e51a88" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.PaySlip/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PaySlip/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip.Test/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip.Test/PaySlipKataTest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip.Test/bin/Debug/netcoreapp2.0/PaySlip.Test.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip.Test/bin/Debug/netcoreapp2.0/PaySlip.Test.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip.Test/bin/Debug/netcoreapp2.0/PaySlip.Test.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip.Test/bin/Debug/netcoreapp2.0/PaySlip.Test.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip.Test/bin/Debug/netcoreapp2.0/PaySlip.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip.Test/bin/Debug/netcoreapp2.0/PaySlip.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip.Test/bin/Debug/netcoreapp2.0/PaySlip.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip.Test/bin/Debug/netcoreapp2.0/PaySlip.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlipGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip/PaySlipGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/bin/Debug/netcoreapp2.0/PaySlip.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip/bin/Debug/netcoreapp2.0/PaySlip.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/bin/Debug/netcoreapp2.0/PaySlip.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip/bin/Debug/netcoreapp2.0/PaySlip.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/obj/Debug/netcoreapp2.0/PaySlip.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip/obj/Debug/netcoreapp2.0/PaySlip.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/obj/Debug/netcoreapp2.0/PaySlip.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip/obj/Debug/netcoreapp2.0/PaySlip.pdb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,20 +26,19 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="UnitTest1.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PaySlip.Test/UnitTest1.cs">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="PaySlipKataTest.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PaySlip.Test/PaySlipKataTest.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="285">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
-                <marker date="1528599197691" expanded="true" signature="6:27" ph="..." />
-                <marker date="1528599197691" expanded="true" signature="46:313" ph="{...}" />
-                <marker date="1528599197691" expanded="true" signature="66:311" ph="{...}" />
-                <marker date="1528599197691" expanded="true" signature="112:305" ph="{...}" />
-                <marker date="1528599197691" expanded="true" signature="350:456" ph="{...}" />
-                <marker date="1528599197691" expanded="true" signature="379:454" ph="{...}" />
-                <marker date="1528599197691" expanded="true" signature="428:448" ph="{...}" />
+                <marker date="1528601481467" expanded="false" signature="6:41" ph="..." />
+                <marker date="1528601481467" expanded="true" signature="69:1783" ph="{...}" />
+                <marker date="1528601481467" expanded="true" signature="104:1781" ph="{...}" />
+                <marker date="1528601481467" expanded="true" signature="520:683" ph="{...}" />
+                <marker date="1528601481467" expanded="true" signature="1075:1244" ph="{...}" />
+                <marker date="1528601481467" expanded="true" signature="1587:1775" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -32,14 +47,16 @@
       <file leaf-file-name="PaySlipGenerator.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PaySlip/PaySlipGenerator.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="180">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
               <folding>
-                <marker date="1528599094639" expanded="true" signature="32:1021" ph="{...}" />
-                <marker date="1528599094639" expanded="true" signature="68:1019" ph="{...}" />
-                <marker date="1528599094639" expanded="true" signature="116:459" ph="{...}" />
-                <marker date="1528599094639" expanded="true" signature="518:619" ph="{...}" />
-                <marker date="1528599094639" expanded="true" signature="694:799" ph="{...}" />
-                <marker date="1528599094639" expanded="true" signature="892:1013" ph="{...}" />
+                <marker date="1528601815533" expanded="true" signature="6:113" ph="..." />
+                <marker date="1528601815533" expanded="true" signature="132:1291" ph="{...}" />
+                <marker date="1528601815533" expanded="true" signature="168:1289" ph="{...}" />
+                <marker date="1528601815533" expanded="true" signature="216:559" ph="{...}" />
+                <marker date="1528601815533" expanded="true" signature="618:719" ph="{...}" />
+                <marker date="1528601815533" expanded="true" signature="794:1069" ph="{...}" />
+                <marker date="1528601815533" expanded="true" signature="1162:1283" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -48,12 +65,12 @@
       <file leaf-file-name="Program.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PaySlip/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" selection-end-line="14" selection-end-column="1" />
+            <state relative-caret-position="150">
+              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
               <folding>
-                <marker date="1528599197699" expanded="true" signature="32:299" ph="{...}" />
-                <marker date="1528599197699" expanded="true" signature="52:297" ph="{...}" />
-                <marker date="1528599197699" expanded="true" signature="98:291" ph="{...}" />
+                <marker date="1528600366885" expanded="true" signature="32:299" ph="{...}" />
+                <marker date="1528600366885" expanded="true" signature="52:297" ph="{...}" />
+                <marker date="1528600366885" expanded="true" signature="98:291" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -61,17 +78,20 @@
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/PaySlip.Test/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/PaySlip/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PaySlip.Test/PaySlipKataTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/PaySlip/PaySlipGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/PaySlip/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/PaySlip/PaySlipGenerator.cs" />
         <option value="$PROJECT_DIR$/PaySlip/Program.cs" />
         <option value="$PROJECT_DIR$/PaySlip.Test/UnitTest1.cs" />
+        <option value="$PROJECT_DIR$/PaySlip/PaySlipGenerator.cs" />
       </list>
     </option>
   </component>
@@ -90,6 +110,7 @@
     <option name="width" value="1646" />
     <option name="height" value="941" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -137,7 +158,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Project.Default">
     <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="$PROJECT_DIR$/PaySlip/bin/Debug/netcoreapp2.0/PaySlip.dll" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -157,6 +178,9 @@
       <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.0" />
       <browser url="http://localhost:5000" />
     </configuration>
+    <list>
+      <item itemvalue=".NET Project.Default" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -169,11 +193,13 @@
       <option name="presentableId" value="Default" />
       <updated>1528598897800</updated>
       <workItem from="1528598899448" duration="298000" />
+      <workItem from="1528600817729" duration="453000" />
+      <workItem from="1528601287972" duration="576000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="298000" />
+    <option name="totallyTimeSpent" value="1327000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -186,31 +212,30 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="34" y="23" width="1646" height="941" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Errors In Solution" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Unit Tests" weight="0.32938388" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="NuGet" weight="0.32938388" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Build" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Unit Tests" order="7" visible="true" weight="0.32938388" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32938388" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.32938388" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2562344" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" order="7" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3992891" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,16 +246,32 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/PaySlip.Test/PaySlipKataTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+          <folding>
+            <marker date="1528601481467" expanded="false" signature="6:41" ph="..." />
+            <marker date="1528601481467" expanded="true" signature="69:1783" ph="{...}" />
+            <marker date="1528601481467" expanded="true" signature="104:1781" ph="{...}" />
+            <marker date="1528601481467" expanded="true" signature="520:683" ph="{...}" />
+            <marker date="1528601481467" expanded="true" signature="1075:1244" ph="{...}" />
+            <marker date="1528601481467" expanded="true" signature="1587:1775" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/PaySlip/PaySlipGenerator.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
-            <marker date="1528599094639" expanded="true" signature="32:1021" ph="{...}" />
-            <marker date="1528599094639" expanded="true" signature="68:1019" ph="{...}" />
-            <marker date="1528599094639" expanded="true" signature="116:459" ph="{...}" />
-            <marker date="1528599094639" expanded="true" signature="518:619" ph="{...}" />
-            <marker date="1528599094639" expanded="true" signature="694:799" ph="{...}" />
-            <marker date="1528599094639" expanded="true" signature="892:1013" ph="{...}" />
+            <marker date="1528601815533" expanded="true" signature="6:113" ph="..." />
+            <marker date="1528601815533" expanded="true" signature="132:1291" ph="{...}" />
+            <marker date="1528601815533" expanded="true" signature="168:1289" ph="{...}" />
+            <marker date="1528601815533" expanded="true" signature="216:559" ph="{...}" />
+            <marker date="1528601815533" expanded="true" signature="618:719" ph="{...}" />
+            <marker date="1528601815533" expanded="true" signature="794:1069" ph="{...}" />
+            <marker date="1528601815533" expanded="true" signature="1162:1283" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -240,25 +281,77 @@
         <state relative-caret-position="210">
           <caret line="14" selection-end-line="14" selection-end-column="1" />
           <folding>
-            <marker date="1528599197699" expanded="true" signature="32:299" ph="{...}" />
-            <marker date="1528599197699" expanded="true" signature="52:297" ph="{...}" />
-            <marker date="1528599197699" expanded="true" signature="98:291" ph="{...}" />
+            <marker date="1528600366885" expanded="true" signature="32:299" ph="{...}" />
+            <marker date="1528600366885" expanded="true" signature="52:297" ph="{...}" />
+            <marker date="1528600366885" expanded="true" signature="98:291" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PaySlip.Test/UnitTest1.cs">
+    <entry file="file://$PROJECT_DIR$/PaySlip.Test/PaySlipKataTest.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
           <folding>
-            <marker date="1528599197691" expanded="true" signature="6:27" ph="..." />
-            <marker date="1528599197691" expanded="true" signature="46:313" ph="{...}" />
-            <marker date="1528599197691" expanded="true" signature="66:311" ph="{...}" />
-            <marker date="1528599197691" expanded="true" signature="112:305" ph="{...}" />
-            <marker date="1528599197691" expanded="true" signature="350:456" ph="{...}" />
-            <marker date="1528599197691" expanded="true" signature="379:454" ph="{...}" />
-            <marker date="1528599197691" expanded="true" signature="428:448" ph="{...}" />
+            <marker date="1528601481467" expanded="false" signature="6:41" ph="..." />
+            <marker date="1528601481467" expanded="true" signature="69:1783" ph="{...}" />
+            <marker date="1528601481467" expanded="true" signature="104:1781" ph="{...}" />
+            <marker date="1528601481467" expanded="true" signature="520:683" ph="{...}" />
+            <marker date="1528601481467" expanded="true" signature="1075:1244" ph="{...}" />
+            <marker date="1528601481467" expanded="true" signature="1587:1775" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PaySlip/PaySlipGenerator.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PaySlip/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PaySlip/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding>
+            <marker date="1528600366885" expanded="true" signature="32:299" ph="{...}" />
+            <marker date="1528600366885" expanded="true" signature="52:297" ph="{...}" />
+            <marker date="1528600366885" expanded="true" signature="98:291" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PaySlip/PaySlipGenerator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding>
+            <marker date="1528601815533" expanded="true" signature="6:113" ph="..." />
+            <marker date="1528601815533" expanded="true" signature="132:1291" ph="{...}" />
+            <marker date="1528601815533" expanded="true" signature="168:1289" ph="{...}" />
+            <marker date="1528601815533" expanded="true" signature="216:559" ph="{...}" />
+            <marker date="1528601815533" expanded="true" signature="618:719" ph="{...}" />
+            <marker date="1528601815533" expanded="true" signature="794:1069" ph="{...}" />
+            <marker date="1528601815533" expanded="true" signature="1162:1283" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PaySlip.Test/PaySlipKataTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <marker date="1528601481467" expanded="false" signature="6:41" ph="..." />
+            <marker date="1528601481467" expanded="true" signature="69:1783" ph="{...}" />
+            <marker date="1528601481467" expanded="true" signature="104:1781" ph="{...}" />
+            <marker date="1528601481467" expanded="true" signature="520:683" ph="{...}" />
+            <marker date="1528601481467" expanded="true" signature="1075:1244" ph="{...}" />
+            <marker date="1528601481467" expanded="true" signature="1587:1775" ph="{...}" />
           </folding>
         </state>
       </provider>

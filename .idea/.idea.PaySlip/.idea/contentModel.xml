@@ -32,7 +32,7 @@
           </e>
         </e>
         <e p="PaySlip.Test.csproj" t="IncludeRecursive" />
-        <e p="UnitTest1.cs" t="Include" />
+        <e p="PaySlipKataTest.cs" t="Include" />
       </e>
     </e>
   </component>

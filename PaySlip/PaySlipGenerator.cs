@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Globalization;
 
 namespace PaySlip
 {
@@ -22,6 +26,8 @@ namespace PaySlip
 
         public string GenerateFullName(string firstName, string lastName)
         {
+            firstName = CultureInfo.InvariantCulture.TextInfo.ToTitleCase(firstName);
+            lastName = CultureInfo.InvariantCulture.TextInfo.ToTitleCase(lastName);
             var fullName = firstName + " " + lastName;
             return fullName ;
         }
