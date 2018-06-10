@@ -52,8 +52,7 @@ namespace PaySlipKata.Test
         [InlineData(7010, 8, 560)]
         public void GivenGrossIncomeIsAPositiveValueWhenSuperIsCalculatedThenReturnSuperRoundedDown(int grossIncome, int superRate, int actualSuper)
         {
-            var superPercentage = (double)superRate / 100;
-            var expectedSuper = Math.Floor(grossIncome * superPercentage);
+            var expectedSuper = paySlip.CalculateSuper(grossIncome, superRate);
 
             Assert.Equal(expectedSuper, actualSuper);
         }

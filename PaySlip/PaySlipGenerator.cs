@@ -37,5 +37,12 @@ namespace PaySlip
             var paymentPeriod = paymentStart + " – " + paymentEnd;
             return paymentPeriod;
         }
+        
+        public double CalculateSuper(int grossIncome, int superRate)
+        {
+            var superRatePercentage = (double)superRate / 100;
+            var super = grossIncome * superRatePercentage;
+            return Math.Floor(super);
+        }
     }
 }
