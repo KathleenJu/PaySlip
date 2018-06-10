@@ -45,5 +45,17 @@ namespace PaySlipKata.Test
 
             Assert.Equal(expectedPaymentPeriod, actualPaymentPeriod);
         }
+        
+        [Theory]
+        [InlineData(5004, 9, 450)]
+        [InlineData(6150, 7, 430)]
+        [InlineData(7010, 8, 560)]
+        public void GivenGrossIncomeIsAPositiveValueWhenSuperIsCalculatedThenReturnSuperRoundedDown(int grossIncome, int superRate, int actualSuper)
+        {
+            var superPercentage = (double)superRate / 100;
+            var expectedSuper = Math.Floor(grossIncome * superPercentage);
+
+            Assert.Equal(expectedSuper, actualSuper);
+        }
     }
 }
