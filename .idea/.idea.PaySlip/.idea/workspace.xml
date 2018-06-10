@@ -2,21 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecdf8886-ba65-4d08-823d-98c6c2e51a88" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PaySlip/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PaySlip/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaySlip.Test/UnitTest1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip.Test/PaySlipKataTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaySlip.Test/bin/Debug/netcoreapp2.0/PaySlip.Test.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip.Test/bin/Debug/netcoreapp2.0/PaySlip.Test.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaySlip.Test/bin/Debug/netcoreapp2.0/PaySlip.Test.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip.Test/bin/Debug/netcoreapp2.0/PaySlip.Test.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaySlip.Test/bin/Debug/netcoreapp2.0/PaySlip.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip.Test/bin/Debug/netcoreapp2.0/PaySlip.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaySlip.Test/bin/Debug/netcoreapp2.0/PaySlip.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip.Test/bin/Debug/netcoreapp2.0/PaySlip.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlipGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip/PaySlipGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaySlip/bin/Debug/netcoreapp2.0/PaySlip.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip/bin/Debug/netcoreapp2.0/PaySlip.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaySlip/bin/Debug/netcoreapp2.0/PaySlip.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip/bin/Debug/netcoreapp2.0/PaySlip.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaySlip/obj/Debug/netcoreapp2.0/PaySlip.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip/obj/Debug/netcoreapp2.0/PaySlip.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PaySlip/obj/Debug/netcoreapp2.0/PaySlip.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PaySlip/obj/Debug/netcoreapp2.0/PaySlip.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/PaySlip.Test.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/UnitTest1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/bin/Debug/netcoreapp2.0/PaySlip.Test.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/bin/Debug/netcoreapp2.0/PaySlip.Test.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/bin/Debug/netcoreapp2.0/PaySlip.Test.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/bin/Debug/netcoreapp2.0/PaySlip.Test.runtimeconfig.dev.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/bin/Debug/netcoreapp2.0/PaySlip.Test.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/bin/Debug/netcoreapp2.0/PaySlip.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/bin/Debug/netcoreapp2.0/PaySlip.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netcoreapp10.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/bin/Debug/netcoreapp2.0/xunit.runner.utility.netcoreapp10.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.csprojResolveAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/obj/Debug/netcoreapp2.0/PaySlip.Test.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/obj/PaySlip.Test.csproj.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/obj/PaySlip.Test.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/obj/PaySlip.Test.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.Test/obj/project.packagespec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip/PaySlip.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip/PaySlipGenerator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip/bin/Debug/netcoreapp2.0/PaySlip.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip/bin/Debug/netcoreapp2.0/PaySlip.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip/bin/Debug/netcoreapp2.0/PaySlip.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip/bin/Debug/netcoreapp2.0/PaySlip.runtimeconfig.dev.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip/bin/Debug/netcoreapp2.0/PaySlip.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip/obj/Debug/netcoreapp2.0/PaySlip.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip/obj/Debug/netcoreapp2.0/PaySlip.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip/obj/Debug/netcoreapp2.0/PaySlip.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip/obj/Debug/netcoreapp2.0/PaySlip.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip/obj/Debug/netcoreapp2.0/PaySlip.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip/obj/Debug/netcoreapp2.0/PaySlip.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip/obj/PaySlip.csproj.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip/obj/PaySlip.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip/obj/PaySlip.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PaySlip/PaySlip/obj/project.packagespec.json" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -194,12 +225,12 @@
       <updated>1528598897800</updated>
       <workItem from="1528598899448" duration="298000" />
       <workItem from="1528600817729" duration="453000" />
-      <workItem from="1528601287972" duration="576000" />
+      <workItem from="1528601287972" duration="866000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1327000" />
+    <option name="totallyTimeSpent" value="1617000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
