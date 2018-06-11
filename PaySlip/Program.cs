@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PaySlip
+namespace PaySlip.Kata
 {
     class Program
     {

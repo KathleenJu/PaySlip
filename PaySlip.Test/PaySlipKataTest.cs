@@ -1,8 +1,8 @@
 using System;
-using PaySlip;
+using PaySlip.Kata;
 using Xunit;
 
-namespace PaySlipKata.Test
+namespace PaySlip.Test
 {
     public class PaySlipKataTest
     {
@@ -45,16 +45,28 @@ namespace PaySlipKata.Test
 
             Assert.Equal(expectedPaymentPeriod, actualPaymentPeriod);
         }
-        
+
         [Theory]
         [InlineData(5004, 9, 450)]
         [InlineData(6150, 7, 430)]
         [InlineData(7010, 8, 560)]
-        public void GivenGrossIncomeIsAPositiveValueWhenSuperIsCalculatedThenReturnSuperRoundedDown(int grossIncome, int superRate, int actualSuper)
+        public void GivenGrossIncomeIsAPositiveValueWhenSuperIsCalculatedThenReturnSuperRoundedDown(int grossIncome,
+            int superRate, int actualSuper)
         {
             var expectedSuper = paySlip.CalculateSuper(grossIncome, superRate);
 
             Assert.Equal(expectedSuper, actualSuper);
         }
+
+        [Theory]
+        [InlineData(60050, 37000, 0.325, 3572, 922)]
+        public void GivenAnnualSalaryIsAPositiveValueWhenIncomeTaxCalculatedThenReturnIncomeTaxRoundedUp(
+            int annualSalary, int minimumTaxableSalary, decimal taxPerDollar, int extraTax, int actualTotalIncomeTax)
+        {
+            var expectedTotalIncomeTax = paySlip.CalculateIncomeTax(annualSalary, minimumTaxableSalary, taxPerDollar, extraTax);
+
+            Assert.Equal(expectedTotalIncomeTax, actualTotalIncomeTax);
+        }
+
     }
 }

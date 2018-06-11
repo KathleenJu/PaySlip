@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Globalization;
 
-namespace PaySlip
+namespace PaySlip.Kata
 {
     public class PaySlipGenerator
     {
@@ -43,6 +43,16 @@ namespace PaySlip
             var superRatePercentage = (double)superRate / 100;
             var super = grossIncome * superRatePercentage;
             return Math.Floor(super);
+        }
+        
+            //Dictionary for the taxable income (minimumAmount, maximumAmount), Tax on this income
+        public decimal CalculateIncomeTax(int annualSalary, int minimumTaxableSalary, decimal taxPerDollar,
+            int extraTax)
+        {
+            var taxableSalary = annualSalary - minimumTaxableSalary;
+            var incomeTax = taxableSalary * taxPerDollar;
+            var expectedTotalIncomeTax = Math.Round((incomeTax + extraTax) / 12);
+            return expectedTotalIncomeTax;
         }
     }
 }
