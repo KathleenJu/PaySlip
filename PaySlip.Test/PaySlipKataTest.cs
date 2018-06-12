@@ -58,15 +58,30 @@ namespace PaySlip.Test
             Assert.Equal(expectedSuper, actualSuper);
         }
 
+//        [Theory]
+////        [InlineData(15600, 0, 0, 0, 15600)]
+//        [InlineData(60050, 37000, 0.325, 3572, 922)]
+//        [InlineData(90100, 87000, 0.37, 19822, 1747)]
+//        [InlineData(185500, 180000, 0.45, 54232, 4726)]
+//        public void GivenAnnualSalaryIsAPositiveValueWhenIncomeTaxCalculatedThenReturnIncomeTaxRoundedUp(
+//            int annualSalary, int minimumTaxableSalary, decimal taxPerDollar, int extraTax, int actualTotalIncomeTax)
+//        {
+//            var expectedTotalIncomeTax = paySlip.CalculateIncomeTax(annualSalary, taxPerDollar, extraTax);
+//
+//            Assert.Equal(expectedTotalIncomeTax, actualTotalIncomeTax);
+//        }
+
         [Theory]
-        [InlineData(60050, 37000, 0.325, 3572, 922)]
-        public void GivenAnnualSalaryIsAPositiveValueWhenIncomeTaxCalculatedThenReturnIncomeTaxRoundedUp(
-            int annualSalary, int minimumTaxableSalary, decimal taxPerDollar, int extraTax, int actualTotalIncomeTax)
+//        [InlineData(15600, 0, 0, 15600)]
+        [InlineData(60050, 0.325, 3572, 922)]
+        [InlineData(90100, 0.37, 19822, 1747)]
+        [InlineData(185500, 0.45, 54232, 4726)]
+        public void GivenAnnualSalaryIsAPositiveValueWhenIncomeTaxCalculatedThenReturnIncomeTaxRoundedUpV2(
+            int annualSalary, decimal taxPerDollar, int extraTax, int actualTotalIncomeTax)
         {
-            var expectedTotalIncomeTax = paySlip.CalculateIncomeTax(annualSalary, minimumTaxableSalary, taxPerDollar, extraTax);
+            var expectedTotalIncomeTax = paySlip.CalculateIncomeTax(annualSalary, extraTax);
 
             Assert.Equal(expectedTotalIncomeTax, actualTotalIncomeTax);
         }
-
     }
 }
