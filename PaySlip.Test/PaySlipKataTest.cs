@@ -7,6 +7,7 @@ namespace PaySlip.Test
     public class PaySlipKataTest
     {
         readonly PaySlipGenerator paySlip = new PaySlipGenerator();
+        //Acceptance Test
 
         [Theory]
         [InlineData("John", "Doe", "John Doe")]
@@ -21,6 +22,8 @@ namespace PaySlip.Test
         }
 
         [Theory]
+        [InlineData(15000, 1250)]
+        [InlineData(18000, 1500)]
         [InlineData(40000, 3333)]
         [InlineData(45000, 3750)]
         [InlineData(46210, 3850)]
@@ -58,28 +61,15 @@ namespace PaySlip.Test
             Assert.Equal(expectedSuper, actualSuper);
         }
 
-//        [Theory]
-////        [InlineData(15600, 0, 0, 0, 15600)]
-//        [InlineData(60050, 37000, 0.325, 3572, 922)]
-//        [InlineData(90100, 87000, 0.37, 19822, 1747)]
-//        [InlineData(185500, 180000, 0.45, 54232, 4726)]
-//        public void GivenAnnualSalaryIsAPositiveValueWhenIncomeTaxCalculatedThenReturnIncomeTaxRoundedUp(
-//            int annualSalary, int minimumTaxableSalary, decimal taxPerDollar, int extraTax, int actualTotalIncomeTax)
-//        {
-//            var expectedTotalIncomeTax = paySlip.CalculateIncomeTax(annualSalary, taxPerDollar, extraTax);
-//
-//            Assert.Equal(expectedTotalIncomeTax, actualTotalIncomeTax);
-//        }
-
         [Theory]
-//        [InlineData(15600, 0, 0, 15600)]
-        [InlineData(60050, 0.325, 3572, 922)]
-        [InlineData(90100, 0.37, 19822, 1747)]
-        [InlineData(185500, 0.45, 54232, 4726)]
+        [InlineData(15600, 0)]
+        [InlineData(60050, 922)]
+        [InlineData(90100, 1747)]
+        [InlineData(185500, 4726)]
         public void GivenAnnualSalaryIsAPositiveValueWhenIncomeTaxCalculatedThenReturnIncomeTaxRoundedUpV2(
-            int annualSalary, decimal taxPerDollar, int extraTax, int actualTotalIncomeTax)
+            int annualSalary, int actualTotalIncomeTax)
         {
-            var expectedTotalIncomeTax = paySlip.CalculateIncomeTax(annualSalary, extraTax);
+            var expectedTotalIncomeTax = paySlip.CalculateIncomeTax(annualSalary);
 
             Assert.Equal(expectedTotalIncomeTax, actualTotalIncomeTax);
         }
