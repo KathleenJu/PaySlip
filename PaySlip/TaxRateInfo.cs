@@ -5,7 +5,7 @@ using System.Net.NetworkInformation;
 
 namespace PaySlip.Kata
 {
-    class TaxInfo
+    class TaxRateInfo
     {
         public double MinimumSalary { get; }
         public double MaximumSalary { get; }
@@ -13,7 +13,7 @@ namespace PaySlip.Kata
         public double TaxPerDollar { get; }
         public double ExtraTax { get; }
 
-        public TaxInfo(IList<double> rateTaxInfo)
+        public TaxRateInfo(IList<double> rateTaxInfo)
         {
             MinimumSalary = rateTaxInfo[0];
             MaximumSalary = rateTaxInfo[1];
