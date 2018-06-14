@@ -66,6 +66,7 @@ namespace PaySlip.Test
 
             Assert.Equal(expectedTotalIncomeTax, actualTotalIncomeTax);
         }
+        
         [Theory]
         [InlineData(5004, 922, 4082)]
         [InlineData(5833, 950, 4883)]

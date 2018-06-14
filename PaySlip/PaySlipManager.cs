@@ -7,25 +7,15 @@ namespace PaySlip.Kata
     public class PaySlipManager
     {
 
-//        new TaxRateInfo(18201, 3453, e4543,345)
-        private static readonly List<Array> listOfTaxRate = new List<Array>
+        private static readonly List<TaxRateInfo> listOfTaxRate = new List<TaxRateInfo>
         {
-            new double[] {0, 18200, 0, 0, 0},
-//            new[] {MinimuSalary: 18201, 37000, 18200, 0.19, 0},
-            new[] {18201, 37000, 18200, 0.19, 0},
-            new[] {37001, 87000, 37000, 0.325, 3572},
-            new[] {87001, 180000, 87000, 0.37, 19822},
-            new[] {180001, Double.PositiveInfinity, 180000, 0.45, 54232} //special case for this
+            new TaxRateInfo(0, 18200, 0, 0, 0),
+            new TaxRateInfo(18201, 37000, 18200, 0.19, 0),
+            new TaxRateInfo(37001, 87000, 37000, 0.325, 3572),
+            new TaxRateInfo(87001, 180000, 87000, 0.37, 19822)   ,
+            new TaxRateInfo(180001, Double.PositiveInfinity, 180000, 0.45, 54232) //special case for this
         };
 
-//        public string GenerateFullName(string firstName, string lastName)
-//        {
-//            firstName = CultureInfo.InvariantCulture.TextInfo.ToTitleCase(firstName);
-//            lastName = CultureInfo.InvariantCulture.TextInfo.ToTitleCase(lastName);
-//            var fullName = firstName + " " + lastName;
-//            return fullName;
-//        }
-        
         public static int CalculateGrossIncome(int annualSalary)
         {
             var grossIncome = annualSalary / 12;
@@ -49,20 +39,18 @@ namespace PaySlip.Kata
         {
             var nonTaxableSalary = 18200;
             var taxPerDollar = 0.0;
-            for (int i = 0; i < listOfTaxRate.Count; i++)
+            foreach (var taxRange in listOfTaxRate)
             {
-                var taxRate = new TaxRateInfo((IList<double>) listOfTaxRate[i]);
-//                if (annualSalary >= taxRate.getMinimumSalary() && annualSalary <= taxRate.MaximumSalary)
-                if (annualSalary >= taxRate.MinimumSalary && annualSalary <= taxRate.MaximumSalary)
+                if (annualSalary >= taxRange.getMinimumSalary() && annualSalary <= taxRange.getMaximumSalary())
                 {
-                    var taxableSalary = annualSalary - taxRate.NonTaxableSalary;
-                    var taxOnSalary = taxableSalary * taxRate.TaxPerDollar;
-                    var incomeTax = Math.Round((taxOnSalary + taxRate.ExtraTax) / 12);
+                    var taxableSalary = annualSalary - taxRange.setNonTaxableSalary();
+                    var taxOnSalary = taxableSalary * taxRange.getTaxPerDollar();
+                    var incomeTax = Math.Round((taxOnSalary + taxRange.getExtraTax()) / 12);
 
                     return incomeTax;
                 }
-            }
-
+                
+            }//must be pure function, shouldnt use the field listoftaxrate
             return 0;
         }
 

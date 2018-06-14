@@ -12,8 +12,8 @@ namespace PaySlip.Test
         [InlineData("scarlett", "jensen", "Scarlett Jensen")]
         public void GenerateFullNameWith(string firstName, string lastName, string actualFullName)
         {
-            var personName = new NameGenerator(firstName, lastName);
-            personName.setFullName(firstName, lastName);
+            var personName = new PersonDetails(firstName, lastName);
+//            personName.setFullName(firstName, lastName);
             var expectedFullName = personName.getFullName();
 
             Assert.Equal(expectedFullName, actualFullName);
