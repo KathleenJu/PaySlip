@@ -13,11 +13,9 @@ namespace PaySlip.Kata
             LastName = lastName;
         }
 
-        public string GetFullName(string firstName, string lastName) //no need for params
+        public string GetFullName()
         {
-            firstName = ToCapitalise(firstName);
-            lastName = ToCapitalise(lastName);
-            var fullName = firstName + " " + lastName;
+            var fullName = ToCapitalise(FirstName) + " " + ToCapitalise(LastName);
             return fullName;
         }
 

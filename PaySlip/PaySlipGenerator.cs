@@ -35,7 +35,7 @@ namespace PaySlip.Kata
             int annualSalary, int superRate)
         {
             var personName = new PersonDetails(firstName, lastName);
-            var fullName = personName.getFullName();
+            var fullName = personName.GetFullName();
             
             var paymentPeriod = GeneratePaymentPeriod(paymentStartDate, paymentEndDate);
             var grossIncome = CalculateGrossIncome(annualSalary);

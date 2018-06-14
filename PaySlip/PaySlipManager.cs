@@ -49,7 +49,6 @@ namespace PaySlip.Kata
 
                     return incomeTax;
                 }
-                
             }//must be pure function, shouldnt use the field listoftaxrate
             return 0;
         }

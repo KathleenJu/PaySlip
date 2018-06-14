@@ -13,8 +13,7 @@ namespace PaySlip.Test
         public void GenerateFullNameWith(string firstName, string lastName, string actualFullName)
         {
             var personName = new PersonDetails(firstName, lastName);
-//            personName.setFullName(firstName, lastName);
-            var expectedFullName = personName.getFullName();
+            var expectedFullName = personName.GetFullName();
 
             Assert.Equal(expectedFullName, actualFullName);
         }
