@@ -34,7 +34,9 @@ namespace PaySlip.Kata
         private void GeneratePaySlip(string firstName, string lastName, string paymentStartDate, string paymentEndDate,
             int annualSalary, int superRate)
         {
-            var fullName = GenerateFullName(firstName, lastName);
+            var personName = new NameGenerator(firstName, lastName);
+            var fullName = personName.getFullName();
+            
             var paymentPeriod = GeneratePaymentPeriod(paymentStartDate, paymentEndDate);
             var grossIncome = CalculateGrossIncome(annualSalary);
             var incomeTax = CalculateIncomeTax(annualSalary);

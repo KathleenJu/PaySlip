@@ -10,18 +10,6 @@ namespace PaySlip.Test
         //Acceptance Test
 
         [Theory]
-        [InlineData("John", "Doe", "John Doe")]
-        [InlineData("Peter", "Smith", "Peter Smith")]
-        [InlineData("ben", "peterson", "Ben Peterson")]
-        [InlineData("scarlett", "jensen", "Scarlett Jensen")]
-        public void FullNameShouldBeGenerated(string firstName, string lastName, string actualFullName)
-        {
-            var expectedFullName = PaySlipManager.GenerateFullName(firstName, lastName);
-
-            Assert.Equal(expectedFullName, actualFullName);
-        }
-
-        [Theory]
         [InlineData(15000, 1250)]
         [InlineData(18000, 1500)]
         [InlineData(40000, 3333)]
