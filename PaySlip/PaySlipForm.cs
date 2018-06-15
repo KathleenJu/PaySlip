@@ -20,7 +20,6 @@ namespace PaySlip.Kata
 
             Console.Write("Please; enter your super rate: ");
             var superRate = Convert.ToInt32(Console.ReadLine());
-//            SuperRate = SuperRate / 100;
 
             Console.Write("Please enter your payment start date: ");
             var paymentStartDate = Console.ReadLine();

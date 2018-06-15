@@ -10,11 +10,11 @@ namespace PaySlip.Kata
         public void GeneratePaySlip()
         {
             var paySlipForm = new PaySlipForm();
-            var personDetails = paySlipForm.GeneratePaySlipForm();
+            var personDetails = paySlipForm.GeneratePaySlipForm(); //refactor, not clear that its returning a persondetails class
 
             var paySlipManager = new PaySlipManager();
-            var paySlip = paySlipManager.PaySlipCalculator(personDetails);
-            ReturnPaySlipResult(paySlip);
+            var paySlipResult = paySlipManager.PaySlipCalculator(personDetails);
+            ReturnPaySlipResult(paySlipResult);
         }
 
         private void ReturnPaySlipResult(PaySlipResult paySlip)
