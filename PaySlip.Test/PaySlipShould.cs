@@ -6,7 +6,7 @@ namespace PaySlip.Test
 {
     public class PaySlipKataTest
     {
-//        readonly PaySlipManager paySlip = new PaySlipManager();
+        readonly PaySlipManager paySlip = new PaySlipManager();
         //Acceptance Test
 
         [Theory]
@@ -21,7 +21,7 @@ namespace PaySlip.Test
         public void GivenTheAnnualSalaryIsAPositiveValueWhenGrossIncomeIsCalculatedThenReturnGrossIncomeRoundedDown(
             int annualSalary, int actualGrossIncome)
         {
-            var expectedGrossIncome = PaySlipManager.CalculateGrossIncome(annualSalary);
+            var expectedGrossIncome = paySlip.CalculateGrossIncome(annualSalary);
 
             Assert.Equal(expectedGrossIncome, actualGrossIncome);
         }
@@ -32,7 +32,7 @@ namespace PaySlip.Test
         [InlineData("1 September", "31 September", "1 September – 31 September")]
         public void PayPeriodShouldBeGenerated(string paymentStart, string paymentEnd, string actualPaymentPeriod)
         {
-            var expectedPaymentPeriod = PaySlipManager.GeneratePaymentPeriod(paymentStart, paymentEnd);
+            var expectedPaymentPeriod = paySlip.GeneratePaymentPeriod(paymentStart, paymentEnd);
 
             Assert.Equal(expectedPaymentPeriod, actualPaymentPeriod);
         }
@@ -44,36 +44,18 @@ namespace PaySlip.Test
         public void GivenGrossIncomeIsAPositiveValueWhenSuperIsCalculatedThenReturnSuperRoundedDown(int grossIncome,
             int superRate, int actualSuper)
         {
-            var expectedSuper = PaySlipManager.CalculateSuper(grossIncome, superRate);
+            var expectedSuper = paySlip.CalculateSuper(grossIncome, superRate);
 
             Assert.Equal(expectedSuper, actualSuper);
         }
 
-        [Theory]
-        [InlineData(15600, 0)]
-        [InlineData(18200, 0)]
-        [InlineData(25750, 120)]
-        [InlineData(37000, 298)]
-        [InlineData(37001, 298)]
-        [InlineData(60050, 922)]
-        [InlineData(87001, 1652)]
-        [InlineData(90100, 1747)]
-        [InlineData(185500, 4726)]
-        public void GivenAnnualSalaryIsAPositiveValueWhenIncomeTaxCalculatedThenReturnIncomeTaxRoundedUp(
-            int annualSalary, int actualTotalIncomeTax)
-        {
-            var expectedTotalIncomeTax = PaySlipManager.CalculateIncomeTax(annualSalary);
-
-            Assert.Equal(expectedTotalIncomeTax, actualTotalIncomeTax);
-        }
-        
         [Theory]
         [InlineData(5004, 922, 4082)]
         [InlineData(5833, 950, 4883)]
         public void GivenGrossIncomeIsCalculatedWhenNetIncomeIsCalculatedThenReturnNetIcome(int grossIncome,
             int incomeTax, int actualNetIncome)
         {
-            var expectedNetIncome = PaySlipManager.CalculateNetIncome(grossIncome, incomeTax);
+            var expectedNetIncome = paySlip.CalculateNetIncome(grossIncome, incomeTax);
 
             Assert.Equal(expectedNetIncome, actualNetIncome);
         }

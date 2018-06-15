@@ -9,7 +9,7 @@ namespace PaySlip.Kata
             Console.Write("Welcome to the payslip generator! \n");
             
             var payslip = new PaySlipGenerator();
-            payslip.GeneratePaySlipForm();
+            payslip.GeneratePaySlip();
         }
     }
 }

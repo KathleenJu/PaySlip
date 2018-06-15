@@ -7,11 +7,11 @@ namespace PaySlip.Kata
 {
     class TaxRateInfo
     {
-        private double MinimumSalary { get; set; }
-        private double MaximumSalary { get; set; }
-        private double NonTaxableSalary { get; set; }
-        private double TaxPerDollar { get; set; }
-        private double ExtraTax { get; set; }
+        private double MinimumSalary { get; }
+        private double MaximumSalary { get; }
+        private double NonTaxableSalary { get; }
+        private double TaxPerDollar { get; }
+        private double ExtraTax { get; }
 
         public double getMinimumSalary()
         {

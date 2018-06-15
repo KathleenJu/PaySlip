@@ -4,13 +4,22 @@ namespace PaySlip.Kata
 {
     public class PersonDetails
     {
-        private string FirstName { get; set; }// get rid of get and set
-        private string LastName { get; set; }
+        private string FirstName { get; }
+        private string LastName { get; }
+        public string PaymentStartDate { get; }
+        public string PaymentEndDate { get; }
+        public int AnnualSalary { get; }
+        public int SuperRate { get; }
 
-        public PersonDetails(string firstName, string lastName)
+        public PersonDetails(string firstName, string lastName, string paymentEndDate, string paymentStartDate,
+            int annualSalary, int superRate)
         {
             FirstName = firstName;
             LastName = lastName;
+            PaymentEndDate = paymentEndDate;
+            PaymentStartDate = paymentStartDate;
+            AnnualSalary = annualSalary;
+            SuperRate = superRate;
         }
 
         public string GetFullName()
