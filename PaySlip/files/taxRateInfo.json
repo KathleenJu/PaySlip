@@ -1,0 +1,36 @@
+﻿{
+  "minimumSalary": 0,
+  "maximumSalary": 18200,
+  "taxableSalary": 0,
+  "taxPerDollar": 0,
+  "extraTax": 0
+},
+{
+  "minimumSalary": 18201,
+  "maximumSalary": 37000,
+  "taxableSalary": 18200,
+  "taxPerDollar": 0.19,
+  "extraTax": 0
+},
+{
+"minimumSalary": 37001,
+"maximumSalary": 87000,
+"taxableSalary": 37000,
+"taxPerDollar": 0.325,
+"extraTax": 3572
+},
+{
+"minimumSalary": 87001,
+"maximumSalary": 180000,
+"taxableSalary": 87000,
+"taxPerDollar": 0.37,
+"extraTax": 19822
+},
+{
+"minimumSalary": 180001,
+"maximumSalary": Double.PositiveInfinity,
+"taxableSalary": 180000,
+"taxPerDollar": 0.45,
+"extraTax": 54232
+        //special case for this as maximumSalary is positve infinity
+}
