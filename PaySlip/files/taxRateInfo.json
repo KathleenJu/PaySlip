@@ -1,4 +1,5 @@
 ﻿{
+  
   "minimumSalary": 0,
   "maximumSalary": 18200,
   "taxableSalary": 0,
@@ -6,11 +7,11 @@
   "extraTax": 0
 },
 {
-  "minimumSalary": 18201,
-  "maximumSalary": 37000,
-  "taxableSalary": 18200,
-  "taxPerDollar": 0.19,
-  "extraTax": 0
+"minimumSalary": 18201,
+"maximumSalary": 37000,
+"taxableSalary": 18200,
+"taxPerDollar": 0.19,
+"extraTax": 0
 },
 {
 "minimumSalary": 37001,
@@ -32,5 +33,5 @@
 "taxableSalary": 180000,
 "taxPerDollar": 0.45,
 "extraTax": 54232
-        //special case for this as maximumSalary is positve infinity
+//special case for this as maximumSalary is positve infinity
 }

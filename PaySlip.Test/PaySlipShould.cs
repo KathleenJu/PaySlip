@@ -6,7 +6,8 @@ namespace PaySlip.Test
 {
     public class PaySlipKataTest
     {
-        readonly PaySlipManager paySlip = new PaySlipManager();
+        static readonly PersonDetails _personDetails = new PersonDetails("test", "test", 0, 0, "test", "test");
+        readonly PaySlipManager paySlip = new PaySlipManager(_personDetails);
         //Acceptance Test
 
         [Theory]
@@ -24,17 +25,6 @@ namespace PaySlip.Test
             var expectedGrossIncome = paySlip.CalculateGrossIncome(annualSalary);
 
             Assert.Equal(expectedGrossIncome, actualGrossIncome);
-        }
-
-        [Theory]
-        [InlineData("1 March", "31 March", "1 March – 31 March")]
-        [InlineData("1 June", "31 June", "1 June – 31 June")]
-        [InlineData("1 September", "31 September", "1 September – 31 September")]
-        public void PayPeriodShouldBeGenerated(string paymentStart, string paymentEnd, string actualPaymentPeriod)
-        {
-            var expectedPaymentPeriod = paySlip.GeneratePaymentPeriod(paymentStart, paymentEnd);
-
-            Assert.Equal(expectedPaymentPeriod, actualPaymentPeriod);
         }
 
         [Theory]
