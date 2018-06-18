@@ -10,9 +10,10 @@ namespace PaySlip.Kata
     {
         public void GeneratePaySlip()
         {
-            StreamReader file = new StreamReader(@"files/formQuestions2.txt");
-            var personDetails = GeneratePersonDetails(GetUserDetails(file));
-
+            StreamReader formQuestions = new StreamReader(@"files/formQuestions2.txt");
+            StreamReader taxRateInfo = new StreamReader(@"files/taxRateInfo.json");
+            
+            var personDetails = GeneratePersonDetails(GetUserDetails(formQuestions));
             var paySlipManager = new PaySlipManager(personDetails);
             var paySlipResult = paySlipManager.PaySlipCalculator();
             ReturnPaySlipResult(paySlipResult);
@@ -34,6 +35,16 @@ namespace PaySlip.Kata
 
         private PersonDetails GeneratePersonDetails(List<string> userDetails)
         {
+//            PersonDetails personDetails = new PersonDetails
+//            {
+//                FirstName = userDetails[0],
+//                LastName = userDetails[1],
+//                AnnualSalary = Convert.ToInt32(userDetails[2]),
+//                SuperRate = Convert.ToInt32(userDetails[3]),
+//                PaymentStartDate = userDetails[4],
+//                PaymentEndDate = userDetails[5]
+//)
+//            };
             return new PersonDetails(userDetails[0], userDetails[1], Convert.ToInt32(userDetails[2]),
                 Convert.ToInt32(userDetails[3]),
                 userDetails[4], userDetails[5]);

@@ -5,6 +5,7 @@ namespace PaySlip.Kata
     public class PaySlipManager
     {
         private readonly PersonDetails _personDetails;
+        //taxRateInfo json file
         
         public PaySlipManager(PersonDetails personDetails)
         {
@@ -15,7 +16,9 @@ namespace PaySlip.Kata
             var fullName = _personDetails.GetFullName();
             var paymentPeriod = _personDetails.GeneratePaymentPeriod(_personDetails.PaymentStartDate, _personDetails.PaymentEndDate);
             var grossIncome = CalculateGrossIncome(_personDetails.AnnualSalary);
-            var tax = new IncomeTaxCalculator(_personDetails.AnnualSalary);
+
+            var taxRateInfo = "files/taxRateInfo.json";
+            var tax = new IncomeTaxCalculator(_personDetails.AnnualSalary, taxRateInfo);
             var incomeTax = tax.CalculateIncomeTax();
             var netIncome =  CalculateNetIncome(grossIncome, (int) incomeTax);
             var super =  CalculateSuper(grossIncome, _personDetails.SuperRate);

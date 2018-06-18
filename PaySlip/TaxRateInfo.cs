@@ -5,13 +5,23 @@ using System.Net.NetworkInformation;
 
 namespace PaySlip.Kata
 {
-    class TaxRateInfo
+    public class TaxRateInfo
     {
         private double MinimumSalary { get; }
         private double MaximumSalary { get; }
         private double NonTaxableSalary { get; }
         private double TaxPerDollar { get; }
         private double ExtraTax { get; }
+
+        public TaxRateInfo(double minimumSalary, double maximumSalary, double nonTaxableSalary, double taxPerDollar,
+            double extraTax)
+        {
+            MinimumSalary = minimumSalary;
+            MaximumSalary = maximumSalary;
+            NonTaxableSalary = nonTaxableSalary;
+            TaxPerDollar = taxPerDollar;
+            ExtraTax = extraTax;
+        }
 
         public double getMinimumSalary()
         {
@@ -23,7 +33,7 @@ namespace PaySlip.Kata
             return MaximumSalary;
         }
 
-        public double setNonTaxableSalary()
+        public double getNonTaxableSalary()
         {
             return NonTaxableSalary;
         }
@@ -36,15 +46,6 @@ namespace PaySlip.Kata
         public double getExtraTax()
         {
             return ExtraTax;
-        }
-
-        public TaxRateInfo(double minimumSalary, double maximumSalary, double nonTaxableSalary, double taxPerDollar, double extraTax)
-        {
-            MinimumSalary = minimumSalary;
-            MaximumSalary = maximumSalary;
-            NonTaxableSalary = nonTaxableSalary;
-            TaxPerDollar = taxPerDollar;
-            ExtraTax = extraTax;
         }
     }
 }

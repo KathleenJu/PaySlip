@@ -18,7 +18,7 @@ namespace PaySlip.Test
         public void GivenAnnualSalaryIsAPositiveValueWhenIncomeTaxCalculatedThenReturnIncomeTaxRoundedUp(
             int annualSalary, int actualTotalIncomeTax)
         {
-            var incomeTax = new IncomeTaxCalculator(annualSalary);
+            var incomeTax = new IncomeTaxCalculator(annualSalary, "files/taxRateInfo.json");
             var expectedTotalIncomeTax = incomeTax.CalculateIncomeTax();
 
             Assert.Equal(expectedTotalIncomeTax, actualTotalIncomeTax);

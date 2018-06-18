@@ -1,35 +1,52 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace PaySlip.Kata
 {
     public class IncomeTaxCalculator
     {
         private readonly int _annualSalary;
+        private readonly string _taxRateInfo;
 
-        public IncomeTaxCalculator(int annualSalary)
+        public IncomeTaxCalculator(int annualSalary, string file)
         {
             _annualSalary = annualSalary;
+            _taxRateInfo = file;
         }
 
-        private readonly List<TaxRateInfo> listOfTaxRate = new List<TaxRateInfo>
+        public List<TaxRateInfo> TaxRateInfoLoader()
         {
-            new TaxRateInfo(0, 18200, 0, 0, 0),
-            new TaxRateInfo(18201, 37000, 18200, 0.19, 0),
-            new TaxRateInfo(37001, 87000, 37000, 0.325, 3572),
-            new TaxRateInfo(87001, 180000, 87000, 0.37, 19822),
-            new TaxRateInfo(180001, Double.PositiveInfinity, 180000, 0.45, 54232) //special case for this
-        };
+            List<TaxRateInfo> TaxRateInfo = new List<TaxRateInfo>();
+            using (StreamReader file =
+                new StreamReader(@"/Users/kathleen.jumamoy/Projects/Katas/PaySlip/PaySlip/files/taxRateInfo.json"))
+            {
+//                var json = file.ReadToEnd();
+                var obj = JObject.Parse(file.ReadToEnd());
+                foreach (var i in obj)
+                {
+                    var taxRange = obj["taxRateInfo"][0];
+                    TaxRateInfo.Add(new TaxRateInfo((double) taxRange["minimumSalary"],
+                        (double) taxRange["maximumSalary"], (double) taxRange["nonTaxableSalary"],
+                        (double) taxRange["taxPerDollar"], (double) taxRange["extraTax"]));
+                }
+            }
+
+            return TaxRateInfo;
+        }
 
         public double CalculateIncomeTax()
         {
             var nonTaxableSalary = 18200;
             var taxPerDollar = 0.0;
-            foreach (var taxRange in listOfTaxRate)
+            var foo = TaxRateInfoLoader();
+            foreach (var taxRange in foo)
             {
                 if (_annualSalary >= taxRange.getMinimumSalary() && _annualSalary <= taxRange.getMaximumSalary())
                 {
-                    var taxableSalary = _annualSalary - taxRange.setNonTaxableSalary();
+                    var taxableSalary = _annualSalary - taxRange.getNonTaxableSalary();
                     var taxOnSalary = taxableSalary * taxRange.getTaxPerDollar();
                     var incomeTax = Math.Round((taxOnSalary + taxRange.getExtraTax()) / 12);
 
