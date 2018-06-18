@@ -25,7 +25,7 @@ namespace PaySlip.Test
         public void PayPeriodShouldBeGenerated(string paymentStart, string paymentEnd, string actualPaymentPeriod)
         {
             var personDetails = new PersonDetails("test", "test", 0, 0, paymentStart, paymentEnd);
-            var expectedPaymentPeriod = personDetails.GeneratePaymentPeriod(paymentStart, paymentEnd);
+            var expectedPaymentPeriod = personDetails.GeneratePaymentPeriod();
 
             Assert.Equal(expectedPaymentPeriod, actualPaymentPeriod);
         }

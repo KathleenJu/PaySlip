@@ -2,26 +2,32 @@
 
 namespace PaySlip.Kata
 {
-    public class PaySlipManager
+    public class PaySlip
     {
         private readonly PersonDetails _personDetails;
-        //taxRateInfo json file
-        
-        public PaySlipManager(PersonDetails personDetails)
+        private string FullName { get; }
+        private string PaymentPeriod { get; }
+        private int GrossIncome { get; }
+        private double IncomeTax { get; }
+        private int NetIncome { get; }
+        private double Super { get; }
+
+        public PaySlip(PersonDetails personDetails)
         {
             _personDetails = personDetails;
         }
+
         public PaySlipResult PaySlipCalculator()
         {
             var fullName = _personDetails.GetFullName();
-            var paymentPeriod = _personDetails.GeneratePaymentPeriod(_personDetails.PaymentStartDate, _personDetails.PaymentEndDate);
+            var paymentPeriod = _personDetails.GeneratePaymentPeriod();
             var grossIncome = CalculateGrossIncome(_personDetails.AnnualSalary);
 
-            var taxRateInfo = "files/taxRateInfo.json";
-            var tax = new IncomeTaxCalculator(_personDetails.AnnualSalary, taxRateInfo);
+            var tax = new IncomeTaxCalculator(_personDetails.AnnualSalary);
+            tax.TaxRateInfoLoader();
             var incomeTax = tax.CalculateIncomeTax();
-            var netIncome =  CalculateNetIncome(grossIncome, (int) incomeTax);
-            var super =  CalculateSuper(grossIncome, _personDetails.SuperRate);
+            var netIncome = CalculateNetIncome(grossIncome, (int) incomeTax);
+            var super = CalculateSuper(grossIncome, _personDetails.SuperRate);
 
             return new PaySlipResult(fullName, paymentPeriod, grossIncome,
                 incomeTax,
@@ -46,5 +52,7 @@ namespace PaySlip.Kata
             int netIncome = grossIncome - incomeTax;
             return netIncome;
         }
+
+//        public void printPaySlip()
     }
 }

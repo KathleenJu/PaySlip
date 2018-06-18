@@ -8,9 +8,11 @@ namespace PaySlip.Kata
         static void Main(string[] args)
         {
             Console.Write("Welcome to the payslip generator! \n\n");
-            
-            var payslip = new PaySlipGenerator();
-            payslip.GeneratePaySlip();
+//            var pd = GetPersonalDetails();
+            var paySlipGenerator = new PaySlipGenerator();
+//            var payslip = paySlipGenerator.GeneratePaySlip(pd);  
+//            payslip.PrintPaySlip();
+           
         }
     }
 }

@@ -7,7 +7,7 @@ namespace PaySlip.Test
     public class PaySlipKataTest
     {
         static readonly PersonDetails _personDetails = new PersonDetails("test", "test", 0, 0, "test", "test");
-        readonly PaySlipManager paySlip = new PaySlipManager(_personDetails);
+        readonly Kata.PaySlip paySlip = new Kata.PaySlip(_personDetails);
         //Acceptance Test
 
         [Theory]

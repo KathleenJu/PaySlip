@@ -1,0 +1,12 @@
+{
+  "formFields": [
+    {
+      "firstName": "Please input your name",
+      "lastName": "Please input your surname",
+      "annualSalary": "Please input your annual salary",
+      "superRate": "Please enter your super rate",
+      "paymentStartDate": "Please enter your payment start date",
+      "paymentEndDate": "Please enter your payment end date"
+    }
+  ]
+}

@@ -8,12 +8,11 @@ namespace PaySlip.Kata
         private string LastName { get; }
         public int AnnualSalary { get; }
         public int SuperRate { get; }
-        public string PaymentStartDate { get; }
-        public string PaymentEndDate { get; }
+        private string PaymentStartDate { get; }
+        private string PaymentEndDate { get; }
 
         public PersonDetails(string firstName, string lastName, int annualSalary, int superRate,
-            string paymentStartDate,
-            string paymentEndDate)
+            string paymentStartDate, string paymentEndDate)
         {
             FirstName = firstName;
             LastName = lastName;
@@ -29,9 +28,9 @@ namespace PaySlip.Kata
             return fullName;
         }
 
-        public string GeneratePaymentPeriod(string paymentStart, string paymentEnd)
+        public string GeneratePaymentPeriod()
         {
-            var paymentPeriod = ToCapitalise(paymentStart) + " – " + ToCapitalise(paymentEnd);
+            var paymentPeriod = ToCapitalise(PaymentStartDate) + " – " + ToCapitalise(PaymentEndDate);
             return paymentPeriod;
         }
 
