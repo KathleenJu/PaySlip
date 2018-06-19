@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using Newtonsoft.Json;
 
 namespace PaySlip.Kata
 {
     public class PaySlip
     {
-        private readonly PersonDetails _personDetails;
         private string FullName { get; }
         private string PaymentPeriod { get; }
         private int GrossIncome { get; }
@@ -12,47 +14,34 @@ namespace PaySlip.Kata
         private int NetIncome { get; }
         private double Super { get; }
 
-        public PaySlip(PersonDetails personDetails)
+        public PaySlip(string fullName, string paymentPeriod, int grossIncome, double incomeTax, int netIncome,
+            double super)
         {
-            _personDetails = personDetails;
+            FullName = fullName;
+            PaymentPeriod = paymentPeriod;
+            GrossIncome = grossIncome;
+            IncomeTax = incomeTax;
+            NetIncome = netIncome;
+            Super = super;
         }
 
-        public PaySlipResult PaySlipCalculator()
+
+        public void PrintPaySlip(string paySlipFormFile)
         {
-            var fullName = _personDetails.GetFullName();
-            var paymentPeriod = _personDetails.GeneratePaymentPeriod();
-            var grossIncome = CalculateGrossIncome(_personDetails.AnnualSalary);
+            using (StreamReader file = new StreamReader(paySlipFormFile))
+            {
+                var json = file.ReadToEnd();
+                var formFields = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
 
-            var tax = new IncomeTaxCalculator(_personDetails.AnnualSalary);
-            tax.TaxRateInfoLoader();
-            var incomeTax = tax.CalculateIncomeTax();
-            var netIncome = CalculateNetIncome(grossIncome, (int) incomeTax);
-            var super = CalculateSuper(grossIncome, _personDetails.SuperRate);
-
-            return new PaySlipResult(fullName, paymentPeriod, grossIncome,
-                incomeTax,
-                netIncome, super);
+                Console.WriteLine("\nYour payslip has been generated:\n");
+                Console.WriteLine(formFields["FullName"] + FullName);
+                Console.WriteLine(formFields["PaymentPeriod"] + PaymentPeriod);
+                Console.WriteLine(formFields["GrossIncome"] + GrossIncome);
+                Console.WriteLine(formFields["IncomeTax"] + IncomeTax);
+                Console.WriteLine(formFields["NetIncome"] + NetIncome);
+                Console.WriteLine(formFields["Super"] + Super);
+                Console.WriteLine("\nThank you for using MYOB!");
+            }
         }
-
-        public int CalculateGrossIncome(int annualSalary)
-        {
-            var grossIncome = annualSalary / 12;
-            return grossIncome;
-        }
-
-        public double CalculateSuper(int grossIncome, int superRate)
-        {
-            double superRatePercentage = (double) superRate / 100;
-            var super = grossIncome * superRatePercentage;
-            return Math.Floor(super);
-        }
-
-        public int CalculateNetIncome(int grossIncome, int incomeTax)
-        {
-            int netIncome = grossIncome - incomeTax;
-            return netIncome;
-        }
-
-//        public void printPaySlip()
     }
 }

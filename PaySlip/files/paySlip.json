@@ -1,12 +1,9 @@
 {
-  "paySlip": [
-    {
-      "name": "Name",
-      "paymentPeriod": "Pay Period",
-      "grossIncome": "Gross Income",
-      "incomeTax": "Income Tax",
-      "netIncome": "Net Income",
-      "super": "Super"
-    }
-  ]
+  "FullName": "Name: ",
+  "PaymentPeriod": "Pay Period: ",
+  "GrossIncome": "Gross Income: ",
+  "IncomeTax": "Income Tax: ",
+  "NetIncome": "Net Income: ",
+  "Super": "Super: "
 }
+
