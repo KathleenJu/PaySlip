@@ -24,24 +24,5 @@ namespace PaySlip.Kata
             NetIncome = netIncome;
             Super = super;
         }
-
-
-        public void PrintPaySlip(string paySlipFormFile)
-        {
-            using (StreamReader file = new StreamReader(paySlipFormFile))
-            {
-                var json = file.ReadToEnd();
-                var formFields = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
-
-                Console.WriteLine("\nYour payslip has been generated:\n");
-                Console.WriteLine(formFields["FullName"] + FullName);
-                Console.WriteLine(formFields["PaymentPeriod"] + PaymentPeriod);
-                Console.WriteLine(formFields["GrossIncome"] + GrossIncome);
-                Console.WriteLine(formFields["IncomeTax"] + IncomeTax);
-                Console.WriteLine(formFields["NetIncome"] + NetIncome);
-                Console.WriteLine(formFields["Super"] + Super);
-                Console.WriteLine("\nThank you for using MYOB!");
-            }
-        }
     }
 }

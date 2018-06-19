@@ -10,30 +10,28 @@ namespace PaySlip.Kata
 {
     public class PaySlipGenerator
     {
-        public void GeneratePaySlip()
+        public PaySlip GeneratePaySlip()
         {
             var formQuestionsFile = @"./files/formQuestions.json";
             var paySlipFormFile = @"./files/paySlip.json";
 
             var personDetails = GeneratePersonDetails(GetPersonDetails(formQuestionsFile));
-            //returns payslip?
+            return PaySlip(personDetails);
         }
 
-        public void Foo()
+        private PaySlip PaySlip(PersonDetails personDetails)
         {
-//            var fullName = _personDetails.GetFullName();
-//            var paymentPeriod = _personDetails.GeneratePaymentPeriod();
-//            var grossIncome = CalculateGrossIncome(_personDetails.AnnualSalary);
-//
-//            var tax = new IncomeTaxCalculator(_personDetails.AnnualSalary);
-//            tax.TaxRateInfoLoader();
-//            var incomeTax = tax.CalculateIncomeTax();
-//            var netIncome = CalculateNetIncome(grossIncome, (int) incomeTax);
-//            var super = CalculateSuper(grossIncome, _personDetails.SuperRate);
-//
-//            return new PaySlipResult(fullName, paymentPeriod, grossIncome,
-//                incomeTax,
-//                netIncome, super);
+            var fullName = personDetails.GetFullName();
+            var paymentPeriod = personDetails.GeneratePaymentPeriod();
+            var taxCalculator = new TaxCalculator(personDetails.AnnualSalary);
+            var grossIncome = taxCalculator.CalculateGrossIncome(personDetails.AnnualSalary);
+            taxCalculator.TaxRateInfoLoader();
+            var incomeTax = taxCalculator.CalculateIncomeTax();
+            var netIncome = taxCalculator.CalculateNetIncome(grossIncome, (int) incomeTax);
+            var super = taxCalculator.CalculateSuper(grossIncome, personDetails.SuperRate);
+            return new PaySlip(fullName, paymentPeriod, grossIncome,
+                incomeTax,
+                netIncome, super);
         }
 
         private Dictionary<string, string> GetPersonDetails(string formQuestionsFile)
@@ -58,9 +56,26 @@ namespace PaySlip.Kata
         private PersonDetails GeneratePersonDetails(Dictionary<string, string> userDetails)
         {
             return new PersonDetails(userDetails["firstName"], userDetails["lastName"],
-                Convert.ToInt32(userDetails["annualSalary"]),
-                Convert.ToInt32(userDetails["superRate"]), userDetails["paymentStartDate"],
-                userDetails["paymentEndDate"]);
+                Convert.ToInt32(userDetails["annualSalary"]), Convert.ToInt32(userDetails["superRate"]),
+                userDetails["paymentStartDate"], userDetails["paymentEndDate"]);
         }
+
+//        public void PrintPaySlip(string paySlipFormFile)
+//        {
+//            using (StreamReader file = new StreamReader(paySlipFormFile))
+//            {
+//                var json = file.ReadToEnd();
+//                var formFields = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
+//
+//                Console.WriteLine("\nYour payslip has been generated:\n");
+//                Console.WriteLine(formFields["FullName"] + FullName);
+//                Console.WriteLine(formFields["PaymentPeriod"] + PaymentPeriod);
+//                Console.WriteLine(formFields["GrossIncome"] + GrossIncome);
+//                Console.WriteLine(formFields["IncomeTax"] + IncomeTax);
+//                Console.WriteLine(formFields["NetIncome"] + NetIncome);
+//                Console.WriteLine(formFields["Super"] + Super);
+//                Console.WriteLine("\nThank you for using MYOB!");
+//            }
+//        }
     }
 }
